@@ -1,4 +1,4 @@
-#hahaha {
-  background: red;
-  font-size: 55rem;
+:root {
+  --main-bg-color: brown;
+  --multiplier: 8rem;
 }
