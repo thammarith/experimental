@@ -21,9 +21,13 @@
 </html>
 
 <script>
-	function redirect() {
-    console.log('hahah');
-		// window.location.href = "https://itunes.apple.com/app/id1074208600"
-		// window.location.href = "ch.sc.food.fantasy.guide://addSystem?alias=SYS1";
-	}
+function redirect() {
+	window.launchsockPicker = function() {
+       setTimeout(function() {
+        window.location = 'https://itunes.apple.com/app/id1074208600'
+       }, 500);
+
+       window.location = 'co.viabus://link?action=addSystem&alias=A123456';
+   };
+}
 </script>
