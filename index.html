@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+	<body onload="redirect()">
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<h1>If cannot open, redirect v4</h1>
+		<br/>
+		<br/>
+		<div>
+			<a href="https://itunes.apple.com/app/id1074208600"> Open App Store</a>
+		</div>
+		<br/>
+		<br/>
+		<div>
+			<a href="co.viabus://link?action=addSystem&alias=A123456">Open in iOS App</a>
+		</div>
+	</body>
+</html>
+
+<script>
+function redirect() {
+	window.location.href = 'co.viabus://link?action=addSystem&alias=A123456';
+	setTimeout(function() {
+		console.log('cannot redirect, going to store');
+		window.location.href = 'https://itunes.apple.com/app/id1074208600';
+	}, 100);
+}
+</script>
